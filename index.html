@@ -16,10 +16,28 @@
     <!-- overlay navigation -->
 
     <div class="ante">
-        <p class="ante-title"></p>
+        <p id="ante-title" class="ante-title"></p>
         <a href="/contact.html" target="_blank">Contact</a>
         <a href="/service.html" target="_blank">Service</a>
         <a href="/single-service.html" target="_blank">Single Service</a>
+
+        
     </div>
+
+    <script>
+        var ai = 0;
+        var txt = 'Async Labs x Ante Vujčić';
+        var speed = 50;
+
+        function typeWriter() {
+            if (ai < txt.length) {
+                document.getElementById("ante-title").innerHTML += txt.charAt(ai);
+                ai++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+    </script>
 </body>
 </html>
