@@ -1022,6 +1022,18 @@ footer a.footer-mail {
     right: -25px;
     top: -5px;
 }
+.ante {
+    background-color: #1d1d1d;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+.ante-title {
+    color: #fff;
+    font-size: 100px;
+    margin-bottom: 40px;
+}
 
 @media screen and (max-width: 1366px){
     header {

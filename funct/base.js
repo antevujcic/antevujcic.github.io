@@ -185,5 +185,16 @@ $(document).ready(function(){
         }
     });
 
+    var ai = 0;
+    var txt = 'Async Labs X Ante Vujčić';
+    var speed = 50;
+
+    function typeWriter() {
+    if (ai < txt.length) {
+        document.getElementById("ante-title").innerHTML += txt.charAt(ai);
+        ai++;
+        setTimeout(typeWriter, speed);
+    }
+    }
 
 });
