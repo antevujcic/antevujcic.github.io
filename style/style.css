@@ -331,6 +331,9 @@ textarea {
     height: 20px;
     opacity: 1;
 }
+.email-sent p {
+    text-align: center;
+}
 textarea:focus {
     outline: none;
 }
